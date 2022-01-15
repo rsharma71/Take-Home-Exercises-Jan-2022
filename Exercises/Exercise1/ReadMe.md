@@ -19,7 +19,9 @@ All validation is to be performed by throwing exceptions. Here are some general 
 
 ### The `Engine`
 
-Engines are the workhorse of the railway system. For our purposes, we need to track the train engine's **Model** (e.g.: "CP 8002"), **Serial Number** (e.g.: "48807"), **Weight** (in pounds, e.g.: 147,700), and **Horse Power** (e.g.: 4400). All of this must be stored as read-only information (it cannot be modified). You will need a greedy constructor for this type. Create an overloaded .ToString() method for the class to display all the instance values in a comma separated value string.
+Engines are the workhorse of the railway system. For our purposes, we need to track the train engine's **Model** (e.g.: "CP 8002"), **Serial Number** (e.g.: "48807"), **Weight** (in pounds, e.g.: 147,700), and **Horse Power** (e.g.: 4400). 
+
+All of this must be stored as read-only information (it cannot be modified). Use private fields and properties with private sets. You will need a greedy constructor for this class. Create an overloaded .ToString() method for the class to display all the instance values in a comma separated value string.
 
 ![Engine](./Engine-ClassDiagram.png)
 
@@ -29,6 +31,13 @@ Note the following:
 
 ![Engine](./CP-7002-TStevens.jpg)
 
+
+### The `RailCarType`
+
+Railcars come in various types. Initially, we will consider only three types of railcars: box cars, coal cars, and covered hoppers.
+
+![RailCarType](./RailCarType-ClassDiagram.png)
+
 ### The `RailCar`
 
 Railcars carry various kinds of goods. Each railcar is stenciled with certain information:
@@ -37,11 +46,16 @@ Railcars carry various kinds of goods. Each railcar is stenciled with certain in
 - **Light Weight** (in pounds) - The weight of the railcar when empty.
 - **Capacity** (in pounds) - Standard maximum Net Weight. This is the "ballpark" figure used when loading a railcar. The actual scale weight may be slightly higher or lower for what is considered a "full" load.
 - **Load Limit** (in pounds) - Absolute maximum Net Weight allowed for safety purposes. This does not include the Light Weight. Exceeding this weight makes the railcar unsafe.
-- **Type** - Value that represents the type of this car.
 
+Each railcar is designed to carry a  specific type of cargo and is tracked as to being in service or out of service:
+
+- **Type** - Value that represents the type of this car.
+- **InService** - Value that represents the activity status of this car.
 ![RailCar](./Hopper.jpg)
 
-Railcars can be loaded with freight. When loaded, each car is weighed at a scale that gives the weight to the nearest 100 pounds. The **Gross Weight** is the weight of the freight and the railcar. The **Net Weight** is the weight of the freight only. Any weight within 90% of the **Capacity** is considered as a "full load". Create an overloaded .ToString() method for the class to display all the instance values in a comma separated value string.
+Railcars can be loaded with freight. When loaded, each car is weighed at a scale that gives the weight to the nearest 100 pounds. The **Gross Weight** is the weight of the freight and the railcar. The **Net Weight** is the weight of the freight only. Any weight within 90% of the **Capacity** is considered as a "full load". 
+
+All fields must be stored as read-only information (it cannot be modified). Use private fields and properties with private sets. InService can be altered via the property. You will need a greedy constructor for this class.Create an overloaded .ToString() method for the class to display all the instance values in a comma separated value string.
 
 ![RailCar](./RailCar-ClassDiagram.png)
 
@@ -54,13 +68,6 @@ Note the following:
 > "For safety, a rail car should be loaded so that Gross Weight is less than the sum of its stenciled Load Limit + Light Weight."
 > 
 > [Source: Boulder Creek Engineering](https://www.bouldercreekengineering.com/scale_ops3.php)
-
-### The `RailCarType`
-
-Railcars come in various types. Initially, we will consider only three types of railcars: box cars, coal cars, and covered hoppers.
-
-![RailCarType](./RailCarType-ClassDiagram.png)
-
 
 ### The `Train`
 
