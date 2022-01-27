@@ -6,7 +6,7 @@
 
 Your task is to generate a set of simple data types to represent the primary objects for managing trains.
 
-For this exercise, place all the required data types in the namespace `TrainSystem` and ensure that they are `public`. Create your project as a Console Application (.NET 5). You will need to code the driver for this exercise to demonstrate your objects can hold appropriate data.
+For this exercise, place all the required data types in the namespace `TrainSystem` and ensure that they are `public`. Create your project as a Console Application (.NET 6). You will need to code the driver for this exercise to demonstrate your objects can hold appropriate data.
 
 ### General Validation Rules
 
