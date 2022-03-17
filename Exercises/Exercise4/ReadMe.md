@@ -11,7 +11,7 @@ You are to create an additional project for the application. This project will b
 Use the demos presented in class as a guide to implementing this exercise.
 ## Install Database
 
-A new database called [TrainWatch](./TrainWatch.dacpac) has been supplied to you for this exercise. 
+A new database called **TrainWatch** has been supplied to you for this exercise. This can be found at the root of this repository. It is a .dacpac file.
 
 Use Microsoft SQL Management Studio to deploy the TrainWatch.dacpac file to the database.
 
@@ -49,7 +49,7 @@ Rebuild your Application Class Library. You should get a successful build
 
 ## Setup Web Application and Class Lbrary connections
 
-You must configure the services coded in your class library for use in your webapp. This will involve creating your connection string, altering your Startup.cs class and creating an extension method in your class library.
+You must configure the services coded in your class library for use in your webapp. This will involve creating your connection string, altering your `Program.cs` class and creating an extension method in your class library.
 
 ### Add reference in Web Application to Class Library
 
