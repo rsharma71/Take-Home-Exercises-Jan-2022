@@ -1,0 +1,55 @@
+﻿@page
+@model TrainWebApp.Pages.ContactFormModel
+@{
+	ViewData["Title"] = "Contact Form";
+}
+<div class="text-center">
+	<h1>Contact Us</h1>
+	<form method="post">
+		
+		
+		<label class="form-label mt-4">
+			Enter an Email: 
+		</label>
+		<input type="email" class="form-control" asp-for="UserEmail" />
+		<br />
+		
+		
+		<label class="form-label mt-4">
+			Select a Topic: (Drop Down List)
+		</label>
+		<select class="form-select" asp-for="topic">
+
+			<option value="Select an Option">Select an option</option>
+			<option value="Contributing">Contributing</option>
+			<option value="Request Membership">Request Membership</option>
+			<option value="Bug Report">Bug Report</option>
+		</select>
+		<br />
+
+		<label class="form-label mt-4">
+			Enter a Message: 
+		</label>
+		<input type="text" class="form-control" asp-for="MessageText" />
+		<br />
+
+		<label class="form-label mt-4">
+			Message Body
+		</label>
+
+		<textarea class="form-control" asp-for="MessageBody" rows="4" cols="100"></textarea>
+		<br />
+
+		<button class="btn btn-lg btn-primary" type="submit">SEND</button>
+		<br />
+		<br />
+
+		<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+		  <div class="card-body">
+			<h4 class="card-title">Contact Details</h4>
+			<p class="card-text">@Model.Details</p>
+		  </div>
+		</div>
+	</form>
+</div>
+

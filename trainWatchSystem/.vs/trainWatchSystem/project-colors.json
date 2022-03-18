@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "af91907a-a51f-400b-998c-68aa2eab4f85": {
+      "ProjectGuid": "af91907a-a51f-400b-998c-68aa2eab4f85",
+      "DisplayName": "trainWatch1",
+      "ColorIndex": 0
+    },
+    "e0280e4c-7a7a-4126-a485-3b9a344dc864": {
+      "ProjectGuid": "e0280e4c-7a7a-4126-a485-3b9a344dc864",
+      "DisplayName": "TrainWatchSystem",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

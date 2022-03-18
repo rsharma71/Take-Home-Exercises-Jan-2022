@@ -1,0 +1,12 @@
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\bin\Debug\net6.0\TrainWatchSystem.deps.json
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\bin\Debug\net6.0\TrainWatchSystem.dll
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\bin\Debug\net6.0\ref\TrainWatchSystem.dll
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\bin\Debug\net6.0\TrainWatchSystem.pdb
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.AssemblyInfo.cs
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.dll
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\ref\TrainWatchSystem.dll
+C:\Users\DELL\source\repos\trainWatchSystem\TainWatch\obj\Debug\net6.0\TrainWatchSystem.pdb

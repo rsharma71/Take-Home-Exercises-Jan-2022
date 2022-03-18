@@ -1,0 +1,23 @@
+﻿@page
+@model trainWatch1.Pages.AboutModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+	<h1>About Train</h1>
+	>
+     @if (Model.DbVersionInfo == null)
+    {
+        <p style="font-weight:bold;">Db Version Unknown</p>
+    }
+    else
+    {
+        <p>Database Version: @Model.DbVersionInfo.Major . 
+                             @Model.DbVersionInfo.Minor .
+                             @Model.DbVersionInfo.Build
+            was released on @Model.DbVersionInfo.ReleaseDate.ToShortDateString()
+        </p>
+    }
+ 
+    </div>
+
